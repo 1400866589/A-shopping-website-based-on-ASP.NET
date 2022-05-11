@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.875, 8.5" name="HardwareAccessoriesShop">
+  <DataContextMoniker Name="/HardwareAccessoriesShopDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b5e61197-22cc-4682-b3e4-a830d70233b9" absoluteBounds="6, 4, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/CartItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7a13688-6c43-4965-82db-11fb4b7f5497" absoluteBounds="6.0150000000000006, 4.4600000000000009, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cbd3a098-f71e-4e22-a482-ac5a929b4630" absoluteBounds="10.75, 0.5, 2, 1.7220992024739577">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/Collections" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81d1d5f4-6b41-453d-924a-66a3879b729a" absoluteBounds="10.765, 0.96, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33c719b0-4d0f-4fcc-b169-815563cdbcd2" absoluteBounds="1.125, 0.5, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/OrderItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="381aca8a-e55b-4300-a0de-a3f7b362058e" absoluteBounds="1.1400000000000006, 0.96, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="050e1a17-3784-472d-a9fa-57706a7a3f27" absoluteBounds="8.5, 2, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="212cae5e-5a60-4d64-8cd1-5ce407bd8c1e" absoluteBounds="8.515, 2.46, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eeae87db-b551-41f3-8de7-69b4b6981cf3" absoluteBounds="3.5, 0.5, 2, 2.6460697428385416">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd9b29b4-2e9a-42f1-ac02-00990ba8986c" absoluteBounds="3.5149999999999997, 0.96, 1.9700000000000002, 2.0860697428385415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 1.45344665527344); (3.125 : 1.45344665527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/Order/Order_OrderItem" />
+      <nodes>
+        <classShapeMoniker Id="eeae87db-b551-41f3-8de7-69b4b6981cf3" />
+        <classShapeMoniker Id="33c719b0-4d0f-4fcc-b169-815563cdbcd2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="19336880-6ef4-48a4-86e6-8a9864f69679" absoluteBounds="6.25, 0.625, 2, 2.4612756347656251">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37017fbb-0d68-45a6-9146-c4ed3b039139" absoluteBounds="6.265, 1.085, 1.9700000000000002, 1.901275634765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 3.08627563476563); (7.125 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/UserInfo/UserInfo_CartItem" />
+      <nodes>
+        <classShapeMoniker Id="19336880-6ef4-48a4-86e6-8a9864f69679" />
+        <classShapeMoniker Id="b5e61197-22cc-4682-b3e4-a830d70233b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.28125); (10.75 : 1.28125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/UserInfo/UserInfo_Collections" />
+      <nodes>
+        <classShapeMoniker Id="19336880-6ef4-48a4-86e6-8a9864f69679" />
+        <classShapeMoniker Id="cbd3a098-f71e-4e22-a482-ac5a929b4630" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.54313781738281); (8.5 : 2.54313781738281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/UserInfo/UserInfo_Comment" />
+      <nodes>
+        <classShapeMoniker Id="19336880-6ef4-48a4-86e6-8a9864f69679" />
+        <classShapeMoniker Id="050e1a17-3784-472d-a9fa-57706a7a3f27" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 1.85563781738281); (5.5 : 1.85563781738281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/UserInfo/UserInfo_Order" />
+      <nodes>
+        <classShapeMoniker Id="19336880-6ef4-48a4-86e6-8a9864f69679" />
+        <classShapeMoniker Id="eeae87db-b551-41f3-8de7-69b4b6981cf3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c737abdb-4b12-4fc8-8d33-90e5888990ff" absoluteBounds="8.625, 4.375, 2, 3.2004520670572916">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/Accessories" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1baabef-4af2-41ae-826e-b598ab56dba8" absoluteBounds="8.64, 4.835, 1.9700000000000002, 2.6404520670572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.625 : 5.14094665527344); (8 : 5.14094665527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/Accessories/Accessories_CartItem" />
+      <nodes>
+        <classShapeMoniker Id="c737abdb-4b12-4fc8-8d33-90e5888990ff" />
+        <classShapeMoniker Id="b5e61197-22cc-4682-b3e4-a830d70233b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.625 : 5.34375); (11.34375 : 5.34375); (11.34375 : 2.22209920247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/Accessories/Accessories_Collections" />
+      <nodes>
+        <classShapeMoniker Id="c737abdb-4b12-4fc8-8d33-90e5888990ff" />
+        <classShapeMoniker Id="cbd3a098-f71e-4e22-a482-ac5a929b4630" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5625 : 4.375); (9.5625 : 3.90689331054688)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/Accessories/Accessories_Comment" />
+      <nodes>
+        <classShapeMoniker Id="c737abdb-4b12-4fc8-8d33-90e5888990ff" />
+        <classShapeMoniker Id="050e1a17-3784-472d-a9fa-57706a7a3f27" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f6dfa920-085d-4f6f-86e7-73ddd583a01d" absoluteBounds="11.625, 6.25, 2, 1.3525109863281251">
+      <DataClassMoniker Name="/HardwareAccessoriesShopDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bea7793-e6a6-4d89-bd89-afebb3577b2f" absoluteBounds="11.64, 6.71, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.625 : 6.91272603352865); (10.625 : 6.91272603352865)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HardwareAccessoriesShopDataContext/Category/Category_Accessories" />
+      <nodes>
+        <classShapeMoniker Id="f6dfa920-085d-4f6f-86e7-73ddd583a01d" />
+        <classShapeMoniker Id="c737abdb-4b12-4fc8-8d33-90e5888990ff" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
