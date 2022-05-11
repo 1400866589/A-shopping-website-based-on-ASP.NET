@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1800
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HardwareAccessoriesShop.Web", "HardwareAccessoriesShop.Web\", "{9647350F-D783-4A60-A960-63C4E49DAF9C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{ba51ee0e-d489-42d9-a96a-fb4f023e6102}|HardwareAccessoriesShop.BLL.dll;{D2095438-EF8D-49E1-BF86-056739DF55A8}|HardwareAccessoriesShop.DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49839"
+		Debug.AspNetCompiler.PhysicalPath = "HardwareAccessoriesShop.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49839\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49839"
+		Release.AspNetCompiler.PhysicalPath = "HardwareAccessoriesShop.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49839\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49839"
+		SlnRelativePath = "HardwareAccessoriesShop.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareAccessoriesShop.BLL", "HardwareAccessoriesShop.BLL\HardwareAccessoriesShop.BLL.csproj", "{BA51EE0E-D489-42D9-A96A-FB4F023E6102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareAccessoriesShop.DAL", "HardwareAccessoriesShop.DAL\HardwareAccessoriesShop.DAL.csproj", "{D2095438-EF8D-49E1-BF86-056739DF55A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9647350F-D783-4A60-A960-63C4E49DAF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9647350F-D783-4A60-A960-63C4E49DAF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9647350F-D783-4A60-A960-63C4E49DAF9C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9647350F-D783-4A60-A960-63C4E49DAF9C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{BA51EE0E-D489-42D9-A96A-FB4F023E6102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA51EE0E-D489-42D9-A96A-FB4F023E6102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA51EE0E-D489-42D9-A96A-FB4F023E6102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA51EE0E-D489-42D9-A96A-FB4F023E6102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2095438-EF8D-49E1-BF86-056739DF55A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2095438-EF8D-49E1-BF86-056739DF55A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2095438-EF8D-49E1-BF86-056739DF55A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2095438-EF8D-49E1-BF86-056739DF55A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA7A0C93-D3F5-454F-A4F1-627B655AE178}
+	EndGlobalSection
+EndGlobal
