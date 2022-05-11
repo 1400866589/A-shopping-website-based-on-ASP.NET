@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>五金配件商城 后台管理</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <script src="../layui/layui.js" type="text/javascript"></script>
+    <style type="text/css">
+        .text-hidden {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image: url('Images/bg1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div class="layui-layout layui-layout-admin">
+            <div class="layui-header">
+                <div class="layui-logo">五金配件商城 后台管理</div>
+                <!-- 头部区域（可配合layui已有的水平导航） -->
+                <ul class="layui-nav layui-layout-right">
+                    <li class="layui-nav-item">
+                        <asp:Label ID="lblAdminName" runat="server"></asp:Label>
+                    </li>
+                    <li class="layui-nav-item">
+                        <asp:LinkButton ID="BtnAdminLogOut" runat="server" OnClick="BtnAdminLogOut_Click">退出登录</asp:LinkButton>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="layui-side layui-bg-black">
+                <div class="layui-side-scroll">
+                    <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                    <ul class="layui-nav layui-nav-tree">
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <a class="" href="javascript:;">商品管理</a>
+                            <dl class="layui-nav-child">
+                                <dd>
+                                    <asp:LinkButton ID="LBtnToCategoryManage" runat="server" PostBackUrl="~/Admin/CategoryManage.aspx">分类管理</asp:LinkButton></dd>
+                                <dd>
+                                    <asp:LinkButton ID="LBtnToNewProduct" runat="server" PostBackUrl="~/Admin/NewProduct.aspx">发布商品</asp:LinkButton></dd>
+                                <dd>
+                                    <asp:LinkButton ID="LBtnToProManage" runat="server" PostBackUrl="~/Admin/ProManage.aspx">管理商品</asp:LinkButton></dd>
+                            </dl>
+                        </li>
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <asp:LinkButton ID="LBtnToUserManage" runat="server" PostBackUrl="~/Admin/UserManage.aspx?type=0">用户管理</asp:LinkButton>
+                        </li>
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <asp:LinkButton ID="LBtnToOrderManage" runat="server" PostBackUrl="~/Admin/OrderManage.aspx">订单管理</asp:LinkButton>
+                        </li>
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <asp:LinkButton ID="LBtnToCommentManage" runat="server" PostBackUrl="~/Admin/CommentManage.aspx">评论管理</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layui-body layui-bg-gray">
+                <!-- 内容主体区域 -->
+                <div style="padding: 15px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="layui-footer" style="text-align: center">
+                Copyright 2022 五金配件市场
+           
+            </div>
+        </div>
+    </form>
+    <script>
+        //注意：导航 依赖 element 模块，否则无法进行功能性操作
+        layui.use('element', function () {
+            var element = layui.element;
+
+            //…
+        });
+        layui.use('form', function () {
+            var form = layui.form;
+
+        });
+        </script>
+</body>
+</html>
